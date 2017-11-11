@@ -6,9 +6,12 @@ version 0.5
 Main features:
 - gulp.
 - pug, sass and babel, no more old stuff.
-- imagemin.
-- minimalize html and css
-- sources map for css and js
+- optymialise images with imagemin.
+- minimalize html and css.
+- sources map for css and js.
+- linked bootstrap4, awesome icons, jquery, popper.
+- concatenation pug and sass files.
+- ready to go bootstrap4 demo.
 
 ## instruction
 Use `gulp` to list all new or modified files that haven't yet been committed.
@@ -24,7 +27,6 @@ Things to do:
 - [ ] add uglify task
 - [ ] what about default task? delete imagemin?
 - [ ] link google fonts
-- [ ] concatenate sass files
 - [ ] *maybe* browserify task
 
 ## issue and bugs
