@@ -79,9 +79,10 @@ gulp.task('imagemin', function(){
     .pipe(gulp.dest(dist + '/images'));
 });
 
-
 gulp.task('default', [ 'html', 'css', 'js', 'watch']);
+
 gulp.task('build', [ 'html', 'css', 'js', 'imagemin']);
+
 gulp.task('watch', function(){
   gulp.watch(dev + '/html/*.pug', ['html']);
   gulp.watch(dev + '/styles/*.sass', ['css']);

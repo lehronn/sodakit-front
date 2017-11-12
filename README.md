@@ -1,7 +1,6 @@
 # sodakit front
 version 1.0.0
 
-
 ## description & features
 Main features:
 - gulp.
@@ -33,16 +32,36 @@ All possibly command:
 `gulp watch` for watch changes only
 `gulp build` to run all building proces without watching changes
 
-Good to know: index.pug is site container for meta-tags, create structure, linking css and libs. File main.pug is content of site.
+Good to know #1: `gulp watch` processes changed files so before You use `gulp watch` You have to build project with `gulp build`.
+
+Good to know #2: index.pug is site container for meta-tags, create structure, linking css and libs. File main.pug is content of site.
+
+### file structure
+./
+  dev - development version of Your project
+  |  docs - documentation of Your project catalog
+  |  html - pug files
+  |  images - images catalog
+  |  others - others sources files like vectors, rastrers, PSD files etc.
+  |  scripts - javascript files catalog
+  |  styles - sass files catalog
+  dist - project ready for distribution
+  node_modules - node.js modules catalog
+  .git - git repos catalog, if You use
+  gulpfile.js - gulp tasks configuration file
+  package.json - npm package meta file for Your project
+  README.mn - You read this now
+  .eslintrc - eslint configuration file
+  .gitignore - ignore configuration file for git
 
 ## to do
-Things to do:
+Things to do in future:
 - [ ] what about babel polyfill?
 - [ ] *maybe* browserify task
 
 ## issue and bugs
-nothing to report.
+please report in github.
 
 ## information & contact
-This boilerplate was built using [GitHub Pages](https://pages.github.com/).
+This boilerplate was served using [GitHub](https://github.com/).
 
