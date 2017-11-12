@@ -1,5 +1,5 @@
 # sodakit front
-version 0.5
+version 1.0.0
 
 
 ## description & features
@@ -24,20 +24,11 @@ Main features:
 5. All is finished, You can work now.
 
 ## gulp instruction
-Use `gulp` to list all new or modified files that haven't yet been committed.
-
-Use `gulp watch` to list all new or modified files that haven't yet been committed.
-
-Use `gulp imagemin` to list all new or modified files that haven't yet been committed.
-
-Use `gulp build` run all gulp tasks to build without watching changes.
-
 All possibly command:
 `gulp` for default task, just build + watch task
 `gulp` html for pug building and concatenation to html
 `gulp css` for sass building
-`gulp babel` for EcmaScript building
-`gulp lint` for JS linting with eslint
+`gulp js` for js building with eslint, babel end sources map
 `gulp imagemin` for image optimalizing
 `gulp watch` for watch changes only
 `gulp build` to run all building proces without watching changes
@@ -46,10 +37,11 @@ Good to know: index.pug is site container for meta-tags, create structure, linki
 
 ## to do
 Things to do:
-- [ ] add uglify task
+- [ ] fix sourcesmap for js
+- [ ] js concatenating
+- [ ] what about babel polyfill?
 - [ ] npm tasking
 - [ ] *maybe* browserify task
-- [ ] *maybe* linter should be before babel?
 
 ## issue and bugs
 nothing to report.

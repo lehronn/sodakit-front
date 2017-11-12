@@ -1,4 +1,2 @@
-'use strict';
-
-console.log('script is linked.');
+"use strict";console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked."),console.log("script is linked.");
 //# sourceMappingURL=main.js.map
