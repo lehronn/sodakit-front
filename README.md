@@ -56,6 +56,7 @@ Good to know #2: index.pug is site container for meta-tags, create structure, li
 
 ## to do
 Things to do in future:
+- [ ] js mapsource do not works when js files > 1, uglify is turn off becouse of it
 - [ ] what about babel polyfill?
 - [ ] *maybe* browserify task
 
