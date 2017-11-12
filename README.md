@@ -1,86 +1,67 @@
 # sodakit front
-version 0.5
-
+version 1.0.0
 
 ## description & features
 Main features:
 - gulp.
 - pug, sass and babel, no more old stuff.
-- optymialise images with imagemin.
+- optymialize images with imagemin.
 - minimalize html and css.
 - sources map for css and js.
+- configurated and ready eslint with flexible configfile.
 - linked bootstrap4, awesome icons, jquery, popper.
 - concatenation pug and sass files.
 - ready to go bootstrap4 demo.
+- linked bootstrap, awesome icons, jquery.
 
-## instruction
-Use `gulp` to list all new or modified files that haven't yet been committed.
+## instalation instruction
+1. Choose version sodakit (front, react or back) and copy from github repositories.
+2. In root catalog use `npm install` with terminal to install all dependencies
+3. Edit package.json and gulpfile as You wish.
+   - Remember, Pug task in Gulp is configurated to process only one file -> dev/html/index.pug, if You want, change it to all html catalog or create object/array of files if You need.
+4. Use `gulp build` in terminal to run all gulp tasks to build without watching changes.
+5. All is finished, You can work now.
 
-Use `git watch` to list all new or modified files that haven't yet been committed.
+## gulp instruction
+All possibly command:
+`gulp` for default task, just build + watch task
+`gulp html` for pug building and concatenation to html
+`gulp css` for sass building
+`gulp js` for js building with eslint, babel end sources map
+`gulp imagemin` for image optimalizing
+`gulp watch` for watch changes only
+`gulp build` to run all building proces without watching changes
 
-Use `git imagemin` to list all new or modified files that haven't yet been committed.
+Good to know #1: `gulp watch` processes changed files so before You use `gulp watch` You have to build project with `gulp build`.
+
+Good to know #2: index.pug is site container for meta-tags, create structure, linking css and libs. File main.pug is content of site.
+
+### file structure
+./
+  dev - development version of Your project
+  |  docs - documentation of Your project catalog
+  |  html - pug files
+  |  images - images catalog
+  |  others - others sources files like vectors, rastrers, PSD files etc.
+  |  scripts - javascript files catalog
+  |  styles - sass files catalog
+  dist - project ready for distribution
+  node_modules - node.js modules catalog
+  .git - git repos catalog, if You use
+  gulpfile.js - gulp tasks configuration file
+  package.json - npm package meta file for Your project
+  README.mn - You read this now
+  .eslintrc - eslint configuration file
+  .gitignore - ignore configuration file for git
 
 ## to do
-Things to do:
-- [ ] watch task is stopped when error throw, fix it
-- [ ] js linter
-- [ ] add uglify task
-- [ ] what about default task? delete imagemin?
-- [ ] link google fonts
+Things to do in future:
+- [ ] what about babel polyfill?
 - [ ] *maybe* browserify task
 
 ## issue and bugs
-nothing to report.
+please report in github.
 
 ## information & contact
+This boilerplate was served using [GitHub](https://github.com/).
 
-
-
-
-
-
-
-# The largest heading
-## The second largest heading
-###### The smallest heading
-
-**This is bold text**	
-*This text is italicized*
-~~This was mistaken text~~
-**This text is _extremely_ important**
-
-In the words of Abraham Lincoln:
-> Pardon my French
-
-Use `git status` to list all new or modified files that haven't yet been committed.
-
-Some basic Git commands are:
-```
-git status
-git add
-git commit
-```
-
-This site was built using [GitHub Pages](https://pages.github.com/).
-
-Contribution guidelines for this project](docs/CONTRIBUTING.md)
-
-You can make a list by preceding one or more lines of text with - or *.
-- George Washington
-- John Adams
-- Thomas Jefferson
-
-1. James Madison
-2. James Monroe
-3. John Quincy Adams
-
-1. First list item in first line.
-   - First nested list item
-     - Second nested list item
-
-
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
-
-@octocat :+1: This PR looks great - it's ready to merge! :shipit:
