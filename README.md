@@ -26,7 +26,7 @@ Main features:
 ## gulp instruction
 All possibly command:
 `gulp` for default task, just build + watch task
-`gulp` html for pug building and concatenation to html
+`gulp html` for pug building and concatenation to html
 `gulp css` for sass building
 `gulp js` for js building with eslint, babel end sources map
 `gulp imagemin` for image optimalizing
@@ -37,10 +37,7 @@ Good to know: index.pug is site container for meta-tags, create structure, linki
 
 ## to do
 Things to do:
-- [ ] fix sourcesmap for js
-- [ ] js concatenating
 - [ ] what about babel polyfill?
-- [ ] npm tasking
 - [ ] *maybe* browserify task
 
 ## issue and bugs
