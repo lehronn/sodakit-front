@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var gutil = require("gulp-util");
+var del = require('del');
 var pug = require('gulp-pug');
 var watch = require('gulp-watch');
 var sass = require('gulp-sass');
@@ -15,6 +16,10 @@ var sourcemaps = require('gulp-sourcemaps');
 var imagemin = require('gulp-imagemin');
 
 var dev = 'dev', dist = 'dist';
+
+gulp.task('clean', function () {
+  return del([dist]);
+});
 
 gulp.task('html', function(){
   return gulp.src(dev + '/html/index.pug')
@@ -79,9 +84,9 @@ gulp.task('imagemin', function(){
     .pipe(gulp.dest(dist + '/images'));
 });
 
-gulp.task('default', [ 'html', 'css', 'js', 'watch']);
+gulp.task('default', ['build', 'watch']);
 
-gulp.task('build', [ 'html', 'css', 'js', 'imagemin']);
+gulp.task('build', ['clean', 'html', 'css', 'js', 'imagemin']);
 
 gulp.task('watch', function(){
   gulp.watch(dev + '/html/*.pug', ['html']);

@@ -24,17 +24,20 @@ Main features:
 
 ## gulp instruction
 All possibly command:
-`gulp` for default task, just build + watch task
+`gulp` for build task with watching changes, just build + watch task
 `gulp html` for pug building and concatenation to html
 `gulp css` for sass building
 `gulp js` for js building with eslint, babel end sources map
 `gulp imagemin` for image optimalizing
-`gulp watch` for watch changes only
-`gulp build` to run all building proces without watching changes
+`gulp clean` for delete dist catalog
+`gulp watch` for watch changes only, without deleting dist folder
+`gulp build` to run all building proces without watching changes and with delete dist folder before building
 
 Good to know #1: `gulp watch` processes changed files so before You use `gulp watch` You have to build project with `gulp build`.
 
 Good to know #2: index.pug is site container for meta-tags, create structure, linking css and libs. File main.pug is content of site.
+
+Good to know #3: If Your javascripts sources map do not load in chrome after run dev tools please click F5 key (refresh) after run F12 (dev tools) *OR* do not use uglify plugin in gulp.
 
 ### file structure
 ./
@@ -56,7 +59,7 @@ Good to know #2: index.pug is site container for meta-tags, create structure, li
 
 ## to do
 Things to do in future:
-- [ ] js mapsource do not works when js files > 1, uglify is turn off becouse of it
+- [ ] add npm commands
 - [ ] what about babel polyfill?
 - [ ] *maybe* browserify task
 
@@ -65,4 +68,3 @@ please report in github.
 
 ## information & contact
 This boilerplate was served using [GitHub](https://github.com/).
-
