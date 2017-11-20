@@ -8,6 +8,7 @@ Main features:
 - optymialize images with imagemin.
 - minimalize html and css.
 - sources map for css and js.
+- ready to go 3 color paletts (material, flat, bootstrap).
 - configurated and ready eslint with flexible configfile.
 - linked bootstrap4, awesome icons, jquery, popper.
 - concatenation pug and sass files.
